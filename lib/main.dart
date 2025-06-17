@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tdd_tutorial/features/number_trivia/presentation/pages/number_trivia_page.dart';
+import 'injection_container.dart' as di;
 
-void main() {
+void main() async {
+  await di.init();
   runApp(const MyApp());
 }
 
@@ -10,9 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Number Trivia',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(useMaterial3: true),
-      home: Scaffold(appBar: AppBar(title: Text("Flutter"))),
+      home: NumberTriviaPage(),
     );
   }
 }

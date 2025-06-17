@@ -20,6 +20,7 @@ dependencies:
   shared_preferences: ^2.5.3
   dartz: ^0.10.1
   connectivity: ^3.0.6
+  internet_connection_checker: ^3.0.1
 
 dev_dependencies:
   flutter_test:
